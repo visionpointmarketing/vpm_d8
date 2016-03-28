@@ -1,37 +1,33 @@
 name: vpm_d8
 type: profile
 description: 'VisionPoint Marketing Drupal 8 starter kit'
+version: VERSION
 core: 8.x
-
-# Optional: Declare your installation profile as a distribution
-# This will make the installer auto-select this installation profile.
-# The distribution_name property is used in the installer and other places as
-# a label for the software being installed.
-distribution:
-  name: VisionPoint Marketing
-
-# Required modules
 dependencies:
   - node
   - history
   - block
-  - block_content
   - breakpoint
+  - ckeditor
   - color
   - config
   - comment
   - contextual
   - contact
+  - menu_link_content
+  - datetime
+  - block_content
   - quickedit
+  - editor
   - help
   - image
-  - menu
-  - number
+  - menu_ui
   - options
   - path
+  - page_cache
+  - dynamic_page_cache
   - taxonomy
   - dblog
-  - responsive_preview
   - search
   - shortcut
   - toolbar
@@ -40,5 +36,8 @@ dependencies:
   - rdf
   - views
   - views_ui
-  - editor
-  - ckeditor
+  - tour
+  - automated_cron
+themes:
+  - bartik
+  - seven
